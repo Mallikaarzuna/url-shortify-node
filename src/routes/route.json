@@ -1,0 +1,8 @@
+{
+  "HOME": "/",
+  "API": "/api",
+  "API_SHORT_URL": "/shortUrl",
+  "API_REGISTER": "/register",
+  "API_LOGIN": "/login",
+  "API_URLDATA": "/urlData"
+}

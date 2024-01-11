@@ -1,0 +1,10 @@
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore log files
+*.log
+
+# Ignore configuration files
+.eslintrc.js
+.prettierrc.js
