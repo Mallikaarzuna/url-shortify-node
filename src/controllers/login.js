@@ -68,7 +68,11 @@ export const handleLoginUser = async (req, res) => {
     const token = jwt.sign(payload, process.env.JWT_SECRET);
 
     // Set JWT as an HTTP-only cookie
-    res.cookie(JWT_COOKIE_NAME, token, { httpOnly: true });
+    res.cookie(JWT_COOKIE_NAME, token, {
+      httpOnly: true,
+      //sameSite: 'none',
+      //domain: 'localhost:5173',
+    });
 
     // Send a response with the token if needed
     res.status(200).json({ token });
