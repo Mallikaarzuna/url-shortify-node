@@ -14,6 +14,7 @@ apiRouter.route(route.API_LOGIN).post(handleLoginUser);
 
 apiRouter.route(route.API_SHORT_URL).post(getShortUrl);
 
-apiRouter.route(route.API_URLDATA).get(privateApi, getUrls);
+//apiRouter.route(route.API_URLDATA).get(privateApi, getUrls);
+apiRouter.route(route.API_URLDATA).get(getUrls);
 
 export default apiRouter;
