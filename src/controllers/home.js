@@ -3,7 +3,7 @@ import UserUrl from '../models/UserUrl.js';
 
 export const handleShortUrl = async (req, res) => {
   const { shortId } = req.params;
-  //console.log(shortId);
+
   try {
     // Find the document with the provided shortUrl
     //const urlDocument = await Url.findOne({ shortUrl });
@@ -13,7 +13,6 @@ export const handleShortUrl = async (req, res) => {
       shortUrl: shortId,
     });
 
-    http: console.log(urlDocument);
     if (urlDocument) {
       // Increment the clicks count
       urlDocument.clicks += 1;
