@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 
-const urlSchema = new mongoose.Schema({
+const UserUrlSchema = new mongoose.Schema({
+  user: {
+    type: String,
+  },
   longUrl: {
     type: String,
     required: true,
@@ -18,6 +21,6 @@ const urlSchema = new mongoose.Schema({
   },
 });
 
-const Url = mongoose.model('Url', urlSchema);
+const UserUrl = mongoose.model('UserUrl', UserUrlSchema);
 
-export default Url;
+export default UserUrl;

@@ -35,7 +35,7 @@ app.use(express.static('public'));
 app.use(verifyJWT);
 
 //attach the router for redirecting to longUrl
-app.use(homeRouter);
+//app.use(homeRouter);
 
 //attach the api router
 app.use(route.API, apiRouter);

@@ -1,4 +1,5 @@
-import Url from '../models/Url.js';
+//import Url from '../models/Url.js';
+import UserUrl from '../models/UserUrl.js';
 
 export const handleShortUrl = async (req, res) => {
   const { shortId } = req.params;
@@ -7,8 +8,9 @@ export const handleShortUrl = async (req, res) => {
     // Find the document with the provided shortUrl
     //const urlDocument = await Url.findOne({ shortUrl });
 
-    const urlDocument = await Url.findOne({
-      shortUrl: `http://localhost:3000/${shortId}`,
+    const urlDocument = await UserUrl.findOne({
+      //shortUrl: `http://localhost:3000/${shortId}`,
+      shortUrl: shortId,
     });
 
     http: console.log(urlDocument);

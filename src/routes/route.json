@@ -4,5 +4,7 @@
   "API_SHORT_URL": "/shortUrl",
   "API_REGISTER": "/register",
   "API_LOGIN": "/login",
-  "API_URLDATA": "/urlData"
+  "API_URLDATA": "/urlData",
+  "API_UserUrlData": "/userUrlData",
+  "API_LOGOUT": "/logout"
 }
